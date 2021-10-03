@@ -25,8 +25,12 @@ bin/kafka-console-consumer.sh --topic quickstart-events --from-beginning --boots
 # Redis-commands
 
 redis-cli
+
 keys *
+
 HGETALL Courier::something::dev
+
 del Courier::something::dev
+
 
 
