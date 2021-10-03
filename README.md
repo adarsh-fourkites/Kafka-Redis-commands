@@ -20,3 +20,13 @@ bin/kafka-topics.sh --describe --topic quickstart-events --bootstrap-server loca
 
 ### consumer 
 bin/kafka-console-consumer.sh --topic quickstart-events --from-beginning --bootstrap-server localhost:9092
+
+
+# Redis-commands
+
+redis-cli
+keys *
+HGETALL Courier::something::dev
+del Courier::something::dev
+
+
